@@ -8,6 +8,9 @@ x = 400
 y = 300
 velocidade = 10
 
+fundo = pygame.image.load('new_game/road.png')
+carro = pygame.image.load('new_game/car2.png')
+
 #cria janela
 janela = pygame.display.set_mode((800,600))
 #da um nome para a janela
@@ -39,10 +42,8 @@ while janela_aberta:
         x -= velocidade        
 
     #limpa a janela
-    janela.fill((0,0,0))
-
-    #criando um componente
-    pygame.draw.circle(janela, (0,255,0), (x,y), 50)
+    janela.blit(fundo, (0,0))
+    janela.blit(carro,(x,y))
 
     #atualizando a tela
     pygame.display.update()
