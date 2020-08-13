@@ -9,7 +9,7 @@ y = 300
 velocidade = 10
 
 fundo = pygame.image.load('new_game/road.png')
-carro = pygame.image.load('new_game/car2.png')
+carro = pygame.image.load('new_game/carro.png')
 
 #cria janela
 janela = pygame.display.set_mode((800,600))
